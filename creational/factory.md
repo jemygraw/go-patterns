@@ -42,8 +42,7 @@ func NewStore(t StorageType) Store {
 }
 ```
 
-用法
-----
+## 用法
 
 利用工厂方法，用户可以指定他们期望的存储类型。
 
@@ -54,3 +53,7 @@ f, _ := s.Open("file")
 n, _ := f.Write([]byte("data"))
 defer f.Close()
 ```
+
+## 实战
+
+其中`factory_spider_example.go`为学习后的扩展应用示例。
